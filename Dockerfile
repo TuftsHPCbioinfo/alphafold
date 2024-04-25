@@ -37,7 +37,7 @@ RUN wget -q -P /tmp \
     && rm /tmp/Miniconda3-latest-Linux-x86_64.sh
 
 # Install conda packages.
-RUN conda install -qy conda==23.5.2 \
+RUN conda install -qy conda==24.1.2 \
     && conda install -y -c conda-forge openmm cudatoolkit==11.7.1 pdbfixer \
     && conda clean --all --force-pkgs-dirs --yes
 
